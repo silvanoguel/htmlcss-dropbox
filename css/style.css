@@ -9,6 +9,11 @@ img{
     max-width: 100%;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+   
+
 /* HEADER */
 
 .header-top {
@@ -40,6 +45,11 @@ img{
     /* debug */
     background-color: lightskyblue;
     padding: 30px;
+}
+
+.jumbotron-container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* MAIN */
@@ -134,11 +144,11 @@ img{
 }
 
 .text {
-     /* debug */
-     width: calc(100% /3);
-     height: 300px;
-     background-color: blueviolet;
-     border: 1px solid black;
+    /* debug */
+    width: calc(100% /3);
+    height: 300px;
+    background-color: blueviolet;
+    border: 1px solid black;
  }
 
  .free-trial-container {
@@ -156,5 +166,56 @@ img{
     padding: 10px 20px;
     background-color: white;
     color: black;
+}
 
+.faq {
+    width: 60%;
+    margin: 100px auto;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+}
+.faq strong {
+    margin: 20px 0;
+}
+.faq div {
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER  */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    /* debug */
+    background-color: black;
+    color: white;  
+    height: 400px;
+}
+
+.footer-links {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.links li {
+    list-style-type: none;
+}
+
+.links ul li  {
+    margin: 10px 0;
 }
