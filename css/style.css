@@ -66,7 +66,8 @@ body{
     margin-right: 20px;
 }
 .btn {
-    background-color: #297AFE;
+    background-color:#0061FF;
+    background-color: ;
     color: white;
     padding: 10px;
 }
@@ -75,10 +76,14 @@ body{
     color: black;
 }
 
+.blue {
+    color: #0061FF;
+}
 .jumbotron {
     margin-top: 50px;
     /* debug */
-    background-color: lightskyblue;
+    background-color:#B4D0E7;
+    background-color: ;
     padding: 30px;
 }
 
