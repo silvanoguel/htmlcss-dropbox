@@ -12,7 +12,22 @@ img{
 body{
     font-family: 'Open Sans', sans-serif;
 }
-   
+
+.flex {
+    display:flex
+}
+
+.display-block {
+    display: block;
+}
+
+.border {
+    border: solid 1px gray;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
 
 /* HEADER */
 
@@ -27,17 +42,30 @@ body{
     align-items: center;
     padding: 10px;
     z-index: 1;
-    /* debug */
-    background-color: grey; 
+    background-color: white;
 }
 
 .nav ul {
     display: flex;
     align-items: center;
-    list-style: none;
+    list-style-type: none;
 }
+
+.nav a {
+    text-decoration: none;
+}
+
 .nav ul li {
-    margin-right: 10px;
+    margin-right: 20px;
+}
+.btn {
+    background-color: #297AFE;
+    color: white;
+    padding: 10px;
+}
+
+.nav a:not(.btn) {
+    color: black;
 }
 
 .jumbotron {
@@ -50,31 +78,90 @@ body{
 .jumbotron-container {
     width: 80%;
     margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+    top: 50px;
+}
+
+.jumbotron-text {
+    width: 30%;
+}
+
+.jumbotron-text i {
+    font-size: 30px;
+    color: black;
+}
+.jumbotron img {
+    height: 500px;
+    width: 70%;
+}
+.jumbotron h1 {
+    font-size: 60px;
+    margin-bottom: 35px;
 }
 
 /* MAIN */
 
 .container {
     width: 60%;
-    background-color: aquamarine;
     max-width: 1100px;
     margin: 0 auto;
     margin-top: 30px;
 }
+.margin-auto {
+    width: 60%;
+    margin: 100px auto;
+}
+
+.plans h2 {
+    margin-bottom: 20px;
+}
+.plans > span {
+    margin-right: 20px;
+}
 
 .col {
-    width: calc(100% / 3);
-    /* debug */
-    height: 600px;
-    background-color: bisque;
-    border: 1px solid black;
+    width: calc(100% / 3 - 20px);
+    margin-top: 16px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
-.plans {
-    display: flex;
-    gap: 30px;
+.col-name {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+.col-info {
+    padding: 10px;
+}
+.col-info > * {
+    margin: 20px 0;
+}
+
+.col-info hr {
+    width: 30%;
+}
+.col-info ul li {
+    margin: 10px 0;
+    font-size: 10px;
+}
+.col-info .btn {
+    text-align: center;
+}
+
+.col-info li{
+    list-style-type: none;
+}
+
+.full-width-col {
     margin-top: 10px;
+    border: 1px solid black;
 }
 
 .col-team {
@@ -127,7 +214,6 @@ body{
     /* debug */
     height: 200px;
     border: 1px solid black;
-
 }
 
 .testimonials {
