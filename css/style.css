@@ -52,6 +52,10 @@ body{
     background-color: white;
 }
 
+header a:not(.btn):hover {
+    border-bottom: 2px solid gray;
+    padding-bottom: 15px;
+}
 .nav ul {
     display: flex;
     align-items: center;
@@ -71,6 +75,9 @@ body{
     color: white;
     padding: 10px;
 }
+.btn:hover {
+    background-color: #6898e6;
+}
 
 .nav a:not(.btn) {
     color: black;
@@ -80,23 +87,24 @@ body{
     color: #0061FF;
 }
 .jumbotron {
-    margin-top: 50px;
-    /* debug */
     background-color:#B4D0E7;
-    background-color: ;
-    padding: 30px;
 }
 
 .jumbotron-container {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     padding-top: 100px;
     position: relative;
-    top: 50px;
+    top: 100px;
 }
 
 .jumbotron-text {
     width: 30%;
+    margin-bottom: 30px;
+}
+
+.jumbotron-text > * {
+    margin-bottom: 40px;
 }
 
 .jumbotron-text i {
@@ -196,12 +204,14 @@ body{
     margin-bottom: 20px;
 }
 
+.find-partner {
+    width: 100%;
+}
+
 .find-partner img {
-    height: 350px;
+    height: 450px;
 }
-.find-partner div {
-    padding: 30px;
-}
+
 .find-partner p {
     margin: 20px 0;
 }
@@ -211,7 +221,6 @@ body{
     color: gray;
     text-align: center;
 }
-
 
 .esegui {
     display: flex;
