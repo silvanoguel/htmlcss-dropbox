@@ -187,6 +187,10 @@ body{
     margin-bottom: 30px;
 }
 
+.card-text {
+    margin-bottom: 20px;
+}
+
 .find-partner img {
     height: 350px;
 }
@@ -317,6 +321,7 @@ footer {
 
 .footer-links a {
     color: white;
+    text-decoration: none;
 }
 
 .links li {
@@ -325,4 +330,10 @@ footer {
 
 .links ul li  {
     margin: 10px 0;
+    font-size: 12px;
+}
+
+.footer-links hr {
+    width: 10%;
+    margin: 40px 0;
 }
