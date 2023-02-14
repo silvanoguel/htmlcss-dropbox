@@ -29,6 +29,13 @@ body{
     justify-content: space-between;
 }
 
+.w-30 {
+    width: 30%;
+}
+
+.w-70 {
+    width: 70%;
+}
 /* HEADER */
 
 .header-top {
@@ -180,19 +187,22 @@ body{
     margin-bottom: 30px;
 }
 
-.large-col {
-    width: 60%;
-    /* debug */
-    min-height: 200px;
-    background-color: red;
+.find-partner img {
+    height: 350px;
+}
+.find-partner div {
+    padding: 30px;
+}
+.find-partner p {
+    margin: 20px 0;
+}
+.find-partner a {
+    border: 2px solid gray;
+    padding: 10px;
+    color: gray;
+    text-align: center;
 }
 
-.small-col {
-    width: 40%;
-    /* debug */
-    min-height: 200px;
-    background-color: blue;
-}
 
 .esegui {
     display: flex;
@@ -203,17 +213,13 @@ body{
 
 .col-small {
     width: calc(100% / 3 - 20px);
-    /* debug */
-    background-color: green;
-    border: 1px solid black;
+   
     margin-top: 20px;
-    height: 200px;
+    height: 500px;
 }
 
 .clients {
-    /* debug */
     height: 200px;
-    border: 1px solid black;
 }
 
 .testimonials {
@@ -224,34 +230,42 @@ body{
 .testimonials-logo {
     /* debug */
     width: calc(100% /3);
-    height: 300px;
+    height: 400px;
     background-color: blueviolet;
     border: 1px solid black;
+    flex-wrap: wrap;
+}
+.testimonials-logo img {
+    float:left;
+    width: 50%;
+    height: 50%; 
 }
 
 .text {
     /* debug */
     width: calc(100% /3);
     height: 300px;
+    /* debug */
     background-color: blueviolet;
     border: 1px solid black;
  }
 
  .free-trial-container {
-    background-color: lightcoral;
+    background-color:#B4D0E7;
     padding: 10px;
+    color: #61082B;
 }
 .free-trial {
     display: flex;
     align-items: center;
     width: 60%;
     margin: 100px auto;
-    justify-content: space-between;
 }
 .free-trial a {
     padding: 10px 20px;
     background-color: white;
     color: black;
+    text-decoration: none;
 }
 
 .faq {
@@ -269,10 +283,17 @@ body{
     align-items: center;
 }
 
-.question {
-    display: flex;
-    justify-content: space-between;
+.questions h2 {
+    margin-bottom: 20px;
 }
+.questions strong {
+    margin: 20px 0;
+}
+.questions div {
+    align-items: center;
+}
+    
+
 
 /* FOOTER  */
 
