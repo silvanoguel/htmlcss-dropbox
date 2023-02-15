@@ -9,10 +9,12 @@ img{
     max-width: 100%;
 }
 
+/* COMMON */
 body{
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Utilities */
 .flex {
     display:flex
 }
@@ -36,8 +38,15 @@ body{
 .w-70 {
     width: 70%;
 }
-/* HEADER */
 
+.f12 {
+    font-size: 12px;
+}
+.blue {
+    color: #0061FF;
+}
+
+/* HEADER */
 .header-top {
     position: fixed;
     top: 0;
@@ -71,9 +80,9 @@ header a:not(.btn):hover {
 }
 .btn {
     background-color:#0061FF;
-    background-color: ;
     color: white;
     padding: 10px;
+    display: inline-block;
 }
 .btn:hover {
     background-color: #6898e6;
@@ -83,9 +92,6 @@ header a:not(.btn):hover {
     color: black;
 }
 
-.blue {
-    color: #0061FF;
-}
 .jumbotron {
     background-color:#B4D0E7;
 }
@@ -112,7 +118,6 @@ header a:not(.btn):hover {
     color: black;
 }
 .jumbotron img {
-    height: 500px;
     width: 70%;
 }
 .jumbotron h1 {
@@ -121,7 +126,6 @@ header a:not(.btn):hover {
 }
 
 /* MAIN */
-
 .container {
     width: 60%;
     max-width: 1100px;
@@ -130,7 +134,7 @@ header a:not(.btn):hover {
 }
 .margin-auto {
     width: 60%;
-    margin: 100px auto;
+    margin: 130px auto;
 }
 
 .plans h2 {
@@ -169,7 +173,7 @@ header a:not(.btn):hover {
 }
 .col-info ul li {
     margin: 10px 0;
-    font-size: 10px;
+    font-size: 12px;
 }
 .col-info .btn {
     text-align: center;
@@ -180,19 +184,8 @@ header a:not(.btn):hover {
 }
 
 .full-width-col {
-    margin-top: 10px;
+    margin-top: 30px;
     border: 1px solid black;
-}
-
-.col-team {
-    width: calc(100% / 1);
-    /* debug */
-    background-color: blanchedalmond;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    height: 200px;
-    border: 1px solid black;
-    margin-bottom: 20px;
 }
 
 .enter {
@@ -208,8 +201,8 @@ header a:not(.btn):hover {
     width: 100%;
 }
 
-.find-partner img {
-    height: 450px;
+.partner-text {
+    padding: 30px;
 }
 
 .find-partner p {
@@ -231,13 +224,13 @@ header a:not(.btn):hover {
 
 .col-small {
     width: calc(100% / 3 - 20px);
-   
     margin-top: 20px;
     height: 500px;
 }
 
 .clients {
     height: 200px;
+    margin-top: 100px;
 }
 
 .testimonials {
@@ -311,20 +304,23 @@ header a:not(.btn):hover {
     align-items: center;
 }
     
+.hover-p {
+    display: none;
+}
 
+.q:hover+.hover-p {
+    display: block;
+}
 
 /* FOOTER  */
-
 .flex-container {
     display: flex;
     justify-content: space-between;
 }
 
 footer {
-    /* debug */
     background-color: black;
     color: white;  
-    height: 400px;
 }
 
 .footer-links {
